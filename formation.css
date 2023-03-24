@@ -1,0 +1,68 @@
+.choixFormation{
+    padding-top: 40px;
+    max-width: 50%;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.groupCriteres{
+    display: flex;
+    justify-content:space-between;
+    gap:50px
+}
+
+.fa-solid{
+    font-size: 1.5em;
+}
+.criteres{
+    width: 50%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.memeLigne{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.superpose{
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.listAvis{
+    font-size: 1.1em;   
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+}
+.trajet{
+    padding-right: 50px;
+}
+.comparatif{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+}
+
+.comparatif .memeLigne{
+    position: absolute;
+    left: 0;
+}
+
+.optionTrajet, .optionHebergement{
+    transition: all 500ms ease-in-out;
+}
+
+.optionTrajet:hover, .optionHebergement:hover{
+    background-color: white;
+    transition: all 500ms ease-in-out;    
+}

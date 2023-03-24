@@ -1,0 +1,176 @@
+body{
+    background-color: #ebebeb;
+    margin: 0;
+    background-attachment: fixed;
+    color:black;
+    letter-spacing: 0.02em;
+}
+
+.mini{
+    font-size: 0.8em;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}
+h3{
+    font-size: 1.3em;
+}
+
+
+
+header{
+    padding: 5px;
+    width: 100vw;
+    background-color:white;
+    position:fixed;
+    text-align: left ;
+    /* box-shadow: 0 0 15px 20px #f1efe9; */
+    z-index: 1;
+}
+
+
+main{
+    margin: auto;
+    max-width:100vw;
+}
+
+
+.imageGauche{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 10vw;
+
+}
+
+.definition{
+    max-width: 45%;
+    padding: 70px 50px 0 0;
+    text-align: left;
+    text-justify: auto;
+    font-size: 1.3em;
+}
+
+.sousSection{
+    padding-top: 20PX;
+    max-width: 1600px;
+    margin: auto;
+}
+.quartresRubrique{
+    padding: 100px 0;
+    transition: all 500ms ease-in-out;
+}
+
+.white{
+    background-color:#f9f9f9;
+    box-shadow: 0 0 10px 10px ,#f9f9f9;
+}
+
+
+
+
+img{
+    object-fit:cover;
+    max-width: 1000px;
+    max-height: 100vh;
+}
+
+p,li{
+    font-size: 1.2em;
+}
+
+.rubrique{
+    max-width: 680px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    transition: all 500ms ease-in-out;
+}
+
+.rubrique:hover{
+    background-color: white;
+    transition: all 500ms ease-in-out;
+}
+
+.rubrique img{
+    transition: all 500ms ease-in-out;
+}
+
+img:hover{
+    opacity: 90%;
+    transition: all 500ms ease-in-out;
+}
+
+.rubrique div{
+    height: 300px;
+    padding: 5px 10px;
+    overflow: auto;
+}
+.ListeRubriques{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.portfolio{
+    padding: 50px 200px;
+}
+.portfolio .sousSection{
+    padding: 0;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.imagePortfolio{
+    
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+
+
+
+
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: 2s all cubic-bezier(.5,0,0,1);
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+

@@ -1,0 +1,17 @@
+body{
+    background-color:#d8d5d0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-weight: 500;
+    list-style: none;
+}
+
+
+
+li{
+    margin: 10px;
+}
+
+

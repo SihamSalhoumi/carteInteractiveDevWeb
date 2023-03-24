@@ -1,0 +1,21 @@
+.softSkills{
+    max-height: 100vh;
+    padding: 70px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.softSkills h2{
+    margin: 30px 0;
+}
+.competences{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.competences p{
+    padding-left: 50px;
+}
+.competences h3{
+    padding: 5px;
+    margin: 0;
+}
