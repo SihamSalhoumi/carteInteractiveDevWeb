@@ -9,13 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="metierBlack.css">
     <script src="script.js"></script>
+    
     <title>Métier développeur web</title>
 </head>
 <body>
-    <header>
-        <h1>LE METIER DE DEVELOPPEUR WEB</h1>
+    <header class="">
+        <div>
+            <h1>LE METIER DE DEVELOPPEUR WEB</h1>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+        </div>
+<!-- *******************navBar desk*******************         -->
+        <nav class="navDesk" role="navigation">
+            <ul>
+                <li class="menu-deroulant"><a class="lienNavBar" href="index.html">Bureau</a></li>
+                <li class="menu-deroulant">
+                    <a class="lienNavBar" href="#">Menu</a>
+                    <ul class="sous-menu">
+                        <li><a class="lienNavBar"href="emploi.html">Recrutement</a></li>
+                        <li><a class="lienNavBar" href="motivation.html">Métier passion</a></li>
+                        <li><a class="lienNavBar" href="skills.html">Compétences</a></li>
+                        <li><a class="lienNavBar" href="formation.html">Formation</a></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+<!-- ****************navBar portable******************* -->
+       <nav class="navPortable" role="navigation">
+            <ul class="menu-deroulant">
+                <li><a class="lienNavBar" href="index.html">Bureau</a></li>
+                <li><a class="lienNavBar"href="emploi.html">Recrutement</a></li>
+                <li><a class="lienNavBar" href="motivation.html">Métier passion</a></li>
+                <li><a class="lienNavBar" href="skills.html">Compétences</a></li>
+                <li><a class="lienNavBar" href="formation.html">Formation</a></li>
+            </ul>
+
+        </nav> 
     </header>
-    <main>
+    <main role="main">
+<!-- **********************SECTION DEFINITION*********************         -->
         <section class="imageGauche">
             <div class="definition">
                 <p>Le développeur web concoit et/ou met à jour un site internet en analysant le besoin du client à travers un cahier des charges. Il travaille souvent en étroite collaboration avec d'autres développeurs, des products Owners, des web designer, SEO etc.</p>
@@ -26,9 +60,11 @@
                     <li>Les développeurs back-end (partie invisible, côté serveur)</li>
                     <li>Les développeurs full stack (partie front-end et back-end)</li>
                 </ul>
-            </div>
-            <img class="clickable" src="images/codes 800x900.jpg">
+            </div>     
+         <img class="clickable codesMax" src="images/codes 800x900.jpg">
+         <img class="clickable codesMiddle" src="images/codes 900x600.jpg">
         </section>
+
 <!-- ***************SECTION ACTIVITE DEVELOPPEUR************************** -->
         <section class="quartresRubrique white">
             <div class="sousSection reveal">
@@ -36,7 +72,7 @@
                 <div class="ListeRubriques">
                     <article class="rubrique">
                         <img src="images/scrum 300x300.jpg" alt="méthode scrum">
-                        <div class="ombreRentree">
+                        <div>
                             <h3>Méthode SCRUM</h3>
                             <P class="sousParagraphe">C’est la méthode de gestion de projet la plus plébiscité par le développeur. 
                                 Elle s’organise en session de 3/4 semaines maximum avec une objectif de conception ou mise à jour clair et précis à réaliser dans cette période (appelé sprint). 
@@ -75,5 +111,17 @@
         </section>
 
     </main>
+
+    <!-- **********JAVA SCRIPT********************************* -->
+    <script>  
+        function toggleMenu (){
+            const header = document.querySelector('header');
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click',() => { 
+            header.classList.toggle('show-nav');
+            }) 
+        }
+        toggleMenu();
+    </script>
 </body>
 </html>
