@@ -1,21 +1,29 @@
 
 
 main{
-    padding-top: 80px;
-    padding-left: 40px;
+    padding-top: var(--hauteur-menu);
+    padding-left:0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 
 }
-main img{
+.Portrait{
     position: fixed;
+    width: 40%;
+    height: 100%;
     right: 0;
+}
+
+.Paysage{
+    display: none;
 }
 
 .history-tl-container{
     padding-top: 20px;
-    width:50%;
-    display:block;
+    width:60%;
+    display: block;
     position:relative;
 }
 .history-tl-container ul.tl{
@@ -27,7 +35,7 @@ main img{
 .history-tl-container ul.tl li{
     list-style: none;
     margin:auto;
-    margin-left:300px;
+    margin-left:350px;
     min-height:50px;
     border-left:1px dashed #8d8c8c;
     padding:0 0 50px 30px;
@@ -54,9 +62,11 @@ main img{
 ul.tl li .item-title{
     margin-bottom: 10px;
     font-size: 1.2em;
+    padding-right: 10px;
 }
 ul.tl li .item-detail{
     color:#282828;
+    padding-right: 10px;
 }
 ul.tl li .timestamp{
     color:#282828;
@@ -66,4 +76,61 @@ ul.tl li .timestamp{
     top:-20%;
     text-align: right;
     padding: 20px 5px;
+}
+
+/* **************Devices******************* */
+
+/* ******middle screen****** */
+@media screen and (max-width:1225px) {
+
+    .history-tl-container ul.tl li{
+        margin-left: 250px;
+    }    
+}
+@media screen and (max-width:1110px) {
+    .Portrait{
+        display: none;}
+
+    main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;}
+
+    .Paysage{
+        display: block;
+        width: 80%;
+        margin: auto;}
+
+    .history-tl-container{
+        width: 80%;
+        padding-top: 20px;
+        margin: 0;
+    }
+    .history-tl-container ul.tl li{
+        margin-left: 200px;
+    }    
+}
+@media screen and (max-width:780px) {
+    .Paysage{
+        width: 100%;
+        padding-top: 0;
+    }
+    .history-tl-container ul.tl li{
+        margin-left: 125px;
+        font-size: 1em;
+}
+}
+@media screen and (max-width:600px) {
+
+    .history-tl-container ul.tl li{
+        margin-left: 100px;
+      
+}
+}
+@media screen and (max-width:560px) {
+    ul.tl li .timestamp{
+        position:sticky;
+        left: 45%;
+
+    }
 }

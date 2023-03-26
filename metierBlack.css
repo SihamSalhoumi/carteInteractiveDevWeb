@@ -1,8 +1,9 @@
 
-
+/* variable */
 :root{
     --hauteur-menu:75px;
 }
+/* Général */
 
 body{
     background-color:#ebebeb;
@@ -11,9 +12,13 @@ body{
     background-attachment: fixed;
     color:black;
     letter-spacing: 0.02em;
-    box-sizing: border-box;
+    box-sizing: borFer-box;
 }
 
+a{
+    color: rgb(27, 20, 162);
+}
+/* Header et nav */
 header{
     padding: 0px;
     width: 100%;
@@ -95,13 +100,13 @@ nav > ul{
 }
 
 nav > ul >li:hover >a{
-    color: darkgreen;
-    font-weight: 700;
+    color: rgb(27, 20, 162);
+    font-weight: 500;
 }
 
 .sous-menu > li:hover >a{
     background-color: white;
-    color: darkgreen;
+    color: rgb(27, 20, 162);
 }
 
 .burger{
@@ -150,7 +155,7 @@ nav > ul >li:hover >a{
 }
 a{
     text-decoration: none;
-    color: darkgreen;
+    color: rgb(27, 20, 162);
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -180,6 +185,9 @@ main{
     margin: auto;
     max-width:100vw;
 }
+.centre{
+    align-items: center;
+}
 
 .imageGauche{
     margin: auto;
@@ -198,7 +206,7 @@ main{
     font-size: 1.3em;
 }
 
-.codesMiddle{
+.imgPaysage{
     display: none;
 }
 
@@ -312,9 +320,11 @@ img:hover{
         font-size: 1.8em;
     }
     
-    .imageGauche img{
-        max-width: 45%;
-        min-height: 675px;
+    .imgPortrait{
+        width: 45%;
+        height: 40%;
+        object-fit: cover;
+        object-position: bottom left;
         position: left;
     }
     .definition{
@@ -324,35 +334,37 @@ img:hover{
     }
 }
 
+
 /* ***Small screen******* */
 
 @media screen and (max-width:900px) {
 
-:root{
-    --hauteur-menu:calc(65px);
-}
+/* Header et NavBar*/
+    :root{
+        --hauteur-menu:calc(65px);
+    }
 
-header{
-    display: block;
-    padding-top:0;
-    background-color: white;
-    color: black;
-    transition: all .5s ease-in-out;
-}
+    header{
+        display: block;
+        padding-top:0;
+        background-color: white;
+        color: black;
+        transition: all .5s ease-in-out;
+    }
 
-.show-nav{
-    height: 100vh;
-    transition: height .5s ease-in-out;
-}
+    .show-nav{
+        height: 100vh;
+        transition: height .5s ease-in-out;
+    }
 
-header>div{
-    width: 100%;
-    height: var(--hauteur-menu);
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    background-color: transparent;
-}
+    header>div{
+        width: 100%;
+        height: var(--hauteur-menu);
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        background-color: transparent;
+    }
 
     .navDesk{
         display: none;
@@ -372,7 +384,7 @@ header>div{
         position: absolute;
         top:30px;
         left:0;
-         transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
 
 
@@ -463,27 +475,64 @@ header>div{
         transform:rotate(-45deg);
     }
 
-    h1{
-        font-size: 1.6em;
-        font-weight: 400;
-    }
-    .codesMax{
+/* Image*/
+
+    .imgPortrait{
         display: none;
     }
-    .codesMiddle{
+    .imgPaysage{
         display: block;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
     }
-    .imageGauche img{
-        max-width: 100%;
-        min-height:50% ;
-    }
+
     .imageGauche{
         flex-direction: column-reverse;
         padding: 5vh 10vw;
     }
+
+/* Font */
+
+    h1{
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    h2,h3{
+        padding: 0;
+        text-align: center;
+    }
+
+/* Disposition*/
+
     .definition{
         max-width:100%;
         padding: 0;
         text-align: center;
     }
+}
+
+/* ***mobile screen******* */
+
+
+@media screen and (max-width:560px) {
+
+/* Disposition*/
+    .imageGauche{
+        padding: 1px;
+    }
+    .definition{
+        padding: 10px;
+        text-align: justify;
+    }
+
+/* Disposition*/
+    h1{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+
+   
 }

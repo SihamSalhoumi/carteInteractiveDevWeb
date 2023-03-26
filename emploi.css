@@ -1,0 +1,57 @@
+/* Disposition */
+
+.imageGauche{
+    height: 100vh;
+}
+
+.definition p{
+    padding: 20px;
+    text-align: justify;
+}
+
+.definition{
+    padding-top: 150px;
+    height: 100%;
+    overflow: auto;
+}
+
+.imgPortrait{
+    height: 100%;
+}
+
+/* **************Devices******************* */
+
+/* ******middle screen****** */
+@media screen and (max-width:1430px) {
+    /* Disposition*/
+    
+    .imageGauche{
+        height: 800px;
+    }
+    .imgPortrait{
+        object-position: center;
+    }
+
+    /*****Small screen*********/
+
+@media screen and (max-width:900px) {
+
+    /* Disposition*/
+    
+        .imageGauche{
+            padding-top: var(--hauteur-menu);
+        }
+        .definition{
+            max-width:100%;
+            padding: 10px;
+            text-align: justify;
+        }
+     
+        /* Image*/
+    
+        .imgPaysage{
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+}

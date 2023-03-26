@@ -1,6 +1,12 @@
+
+.imageGauche{
+    height: 1200px;
+}
+
 .softSkills{
-    max-height: 100vh;
-    padding: 70px 50px 0 0;
+    height: 100%;
+    overflow: auto;
+    padding: 80px 50px 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -8,6 +14,14 @@
 .softSkills h2{
     margin: 30px 0;
 }
+
+.imgPortrait{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
 .competences{
     text-align: left;
     margin-bottom: 20px;
@@ -18,4 +32,44 @@
 .competences h3{
     padding: 5px;
     margin: 0;
+}
+
+/* **************Devices******************* */
+
+/* ******middle screen****** */
+@media screen and (max-width:1430px) {
+    /* Disposition*/
+    
+    .imageGauche{
+        height: 1000px;
+    }
+    
+}
+
+/* ***Small screen******* */
+
+@media screen and (max-width:900px) {
+
+/* Disposition*/
+
+    .imageGauche{
+        padding-top: var(--hauteur-menu);
+    }
+    .softSkills{
+        max-width:100%;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .competences p{
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Image*/
+
+    .imgPaysage{
+        object-fit: cover;
+        object-position: top center;
+    }
 }

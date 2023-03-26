@@ -7,14 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="metierBlack.css">
     <link rel="stylesheet" href="index.css">
 
-    <title>Image intéractive</title>
+    <script src="script.js"></script>
+    
+    <title>Bureau intéractif</title>
 </head>
 <body>
- 
-    <main>
-        <img src="images/bureau 1600x1200.jpg" usemap="#image-map">
+    <header class="">
+        <div>
+            <h1>BUREAU INTERACTIF</h1>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+        </div>
+<!-- ****************navBar portable******************* -->
+       <nav class="navPortable" role="navigation">
+            <ul class="menu-deroulant">
+                <li><a class="lienNavBar"href="metierBlack.html">Descriptif</a></li>
+                <li><a class="lienNavBar" href="motivation.html">Métier passion</a></li>
+                <li><a class="lienNavBar" href="skills.html">Compétences</a></li>
+                <li><a class="lienNavBar" href="formation.html">Formation</a></li>
+                <li><a class="lienNavBar"href="emploi.html">Recrutement</a></li>
+            </ul>
+
+        </nav> 
+    </header>>
+<!-- **********************INTERACTIVE CARD*********************         -->
+    <main role="main">
+        <img class="interactivePicture"src="images/bureau 1600x1200.jpg" usemap="#image-map">
 
         <map name="image-map">
             <area target="_blank" alt="Choix de l'organisme de formation" title="Choix de l'organisme de formation" href="formation.html" coords="817,863,966,867,969,890,962,979,790,962" shape="poly">
@@ -23,8 +45,27 @@
             <area target="_blank" alt="Mes compétences pour ce métier" title="Mes compétences pour ce métier" href="skills.html" coords="761,595,766,737,770,747,783,751,794,758,822,764,839,763,867,757,883,750,894,737,891,716,901,720,918,717,934,709,946,698,954,671,952,647,944,629,935,613,917,606,896,613,896,596,887,582,869,576,845,571,818,569,793,571,774,578" shape="poly">
             <area target="_blank" alt="Une passion depuis l'enfance " title="Une passion depuis l'enfance " href="motivation.html" coords="963,393,1547,449,1472,912,958,726" shape="poly">
         </map>
+        <div class="menuPortable">
+            <img src="images/codes 900x600.jpg" alt="Ordinateur avec codes">
+            <img src="images/passion900x600.jpg" alt="Tableau avec citation">
+            <img src="images/mug 900x600.jpg" alt="Mug collègue de compètes">
+            <img src="images/donkey 900x600.jpg" alt="Post-it Donkey school">
+            <img src="images/emploi 900x600.jpg" alt="Télépohone portable sur indeed">
 
+        </div>
     </main>
-    
+
+
+    <!-- **********JAVA SCRIPT********************************* -->
+    <script>  
+        function toggleMenu (){
+            const header = document.querySelector('header');
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click',() => { 
+            header.classList.toggle('show-nav');
+            }) 
+        }
+        toggleMenu();
+    </script>
 </body>
 </html>

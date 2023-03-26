@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 <body>
     <header class="">
         <div>
-            <h1>LE METIER DE DEVELOPPEUR WEB</h1>
+            <h1>L'organisme de formation</h1>
             <button class="burger">
                 <span class="bar"></span>
             </button>
@@ -47,10 +47,10 @@
                 <li><a class="lienNavBar" href="motivation.html">Métier passion</a></li>
                 <li><a class="lienNavBar" href="skills.html">Compétences</a></li>
             </ul>
-        </nav> 
-                
+        </nav>    
     </header>
     <main>
+                <!-- *************** SECTION COMPARATIF  ***************  -->
         <section class="imageGauche">
             <div class="choixFormation">
                 <p>Pour choisir l'organisme de formation qui me convient, j'ai comparé plusieurs organismes entre eux via les critères de séléction suivants.</p>
@@ -58,42 +58,44 @@
                 <div class="groupCriteres">
                     <div class="criteres">
                         <i class="fa-solid fa-business-time" style="color: #000000;"></i>
-                        <p>La durée de formation : plus de 6 mois et moins d'un an</p>
+                        <p>La durée de formation : de 6 mois et 1 an</p>
                     </div>
                     <div class="criteres">
                         <i class="fa-solid fa-coins" style="color: #000000;"></i>                 
-                        <p>Le prix de la formation : inférieur à 10 000 € </p>
+                        <p>Le prix de la formation : moins 12 000 € </p>
                     </div>    
                 </div>
                 <div class="groupCriteres">
                     <div class="criteres">
                         <i class="fa-sharp fa-solid fa-calendar-days" style="color: #000000;"></i>                        
-                        <p>Le programme : technologies enseignées reconnues et utilisées par les entreprises.  </p>
+                        <p>Le programme : technologies reconnues par les entreprises.  </p>
                     </div>                  
                     <div class="criteres">
                         <i class="fa-solid fa-person-chalkboard" style="color: #000000;"></i>
-                        <p>Présentiel : au minimum de 30 % en présentiel.</p>
+                        <p>Format : au moins 30 % en présentiel</p>
                     </div> 
                 </div>    
                 <div class="groupCriteres">
                     <div class="criteres">
                         <i class="fa-solid fa-user-graduate" style="color: #000000;"></i>
-                        <p>Taille de la promotion : 25 élèves par promotion maximum. </p>
+                        <p>Promotion : 25 élèves maximum. </p>
                     </div>   
                     <div class="criteres">
                         <i class="fa-solid fa-thumbs-up" style="color: #000000;"></i>
-                        <p>Les avis : Une note minimum de 3,5/5  </p>
+                        <p>Les avis : note minimum de 3,5/5  </p>
                     </div>       
                 </div>
-                <div class="memeLigne">
+                <div class="centre">
                     <p>Voici le tableau de comparaison : </p>
                     <a href="Comparatif.pdf" target="_blank" >Tableau comparatif</a>    
                 </div>
 
                 <p>Suite à ce comparatif, j'ai retenu l'organisme Donkey School. </p>
-                <p class="mini">* choix des critères determiné grâce aux informations récoltées auprès des professionnel ainsi qu'à mon retour d'expérience avec le BTS SIO.</p>
+                <p class="mini">* choix des critères determiné grâce aux échanges avec les professionnels et mon retour d'expérience avec le BTS SIO.</p>
             </div>
-            <img class="clickable" src="images/donkey 900x1200.jpg">
+            <img class="clickable imgPortrait" src="images/donkey 900x1200.jpg">
+            <img class="clickable imgPaysage" src="images/donkey 900x600.jpg">
+
         </section>
 <!-- ************* SECTION CHOIX DONKEY SCHOOL************************* -->
         <section class="quartresRubrique white">
@@ -110,7 +112,7 @@
                     </article>
         
                     <article class="rubrique">
-                        <img src="images/programme300x300.jpg" alt="image code programmation">
+                        <img class="imgPortrait" src="images/programme300x300.jpg" alt="image code programmation">
                         <div class="ombreRentree">
                             <h3>Un programme adapté au marché</h3>
                             <p class="sousParagraphe">La formation est pensée pour permettre aux étudiants d’être opérationnel à la fin de la formation. Les technologies qui y sont enseignées sont celles qui m’ont été recommandées par les professionnels rencontrées : javascript, PHP, un Framework et MYSQL pour les bases de données.</p>
@@ -138,8 +140,8 @@
             </div>
         </section>
         <!-- ******* SECTION RETOURS ANCIENS ELEVES ********************** -->
-        <section class="listAvis reveal">
-            <div class="sousSection">
+        <section class="imageGauche listAvis reveal">
+            <div class="avisText">
                 <h2>Retours des anciens élèves</h2>
                 <p> Afin de confirmer la véracité des avis trouvés sur internet, j'ai contacté d'anciens élèves via Linkedin.
                 </p>
@@ -152,10 +154,10 @@
                     <img class="imgAvis" src="images/avis.jpg" alt="Avis des anciens élèves">
                 </div>
             </div>  
-            <img src="images/linkedinAvis 800.jpg" alt="Message anciens élèves">
+            <img class="imgPortrait" src="images/linkedinAvis 900x1200.jpg" alt="Message anciens élèves">
         </section>
 <!-- ***********************SECTION CHOIX TRAJET*************************** -->
-        <section class="imageGauche white reveal">
+        <section class="imageGauche white sectionTrajet reveal">
             <div class="trajet">
                 <h2>Choix trajet / hébergement</h2>
 
@@ -195,7 +197,7 @@
                     <h3>Meilleur option : Hébergement à l'auberge de jeunesse </h3>
                 </div>
             </div>
-            <img class="clickable" src="images/argent 900x1200.jpg">
+            <img class="imgPortrait"  class="clickable" src="images/argent 900x1200.jpg">
         </section>      
     </main>
     <!-- **********JAVA SCRIPT********************************* -->
@@ -209,6 +211,5 @@
         }
         toggleMenu();
     </script>
-
 </body>
 </html>
