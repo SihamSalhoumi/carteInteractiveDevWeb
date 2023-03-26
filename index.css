@@ -152,7 +152,7 @@ header>div{
     height: 100vh;
 }
 .menuPortable img{
-    max-height: 40%;
+    max-height: 100%;
     width: 100%;
     object-fit: cover;
     -webkit-box-shadow:  8px -5px 23px 1px rgba(217,217,217,0.27); 
@@ -169,6 +169,11 @@ header>div{
 }
 .menuPortable img:last-child{
     object-position: top;
+}
+.menuPortable a{
+    color: transparent;
+    background-color: transparent;
+    display: inline;
 }
 
 
