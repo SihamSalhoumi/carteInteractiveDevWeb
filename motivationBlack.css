@@ -121,17 +121,17 @@ ul.tl li .timestamp{
         font-size: 1em;
 }
 }
-@media screen and (max-width:600px) {
 
-    .history-tl-container ul.tl li{
-        margin-left: 100px;
-      
-}
-}
-@media screen and (max-width:560px) {
+
+@media screen and (max-width:700px) {
     ul.tl li .timestamp{
         position:sticky;
         left: 45%;
+        width: 100%;
+        font-weight: 600;
+    }
 
+    .history-tl-container ul.tl li{
+        margin-left: 50px;
     }
 }
