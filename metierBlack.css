@@ -16,7 +16,8 @@ body{
 }
 
 a{
-    color: rgb(27, 20, 162);
+    color: rgb(29, 29, 181)
+
 }
 /* Header et nav */
 header{
@@ -51,7 +52,7 @@ header li{
 
 .lienNavBar{
     font-weight: 400;
-    color: black; 
+    color: rgb(29, 29, 181); 
     text-align: left;
 }
 
@@ -100,13 +101,15 @@ nav > ul{
 }
 
 nav > ul >li:hover >a{
-    color: rgb(27, 20, 162);
+    color: rgb(29, 29, 181);
+
     font-weight: 500;
 }
 
 .sous-menu > li:hover >a{
     background-color: white;
-    color: rgb(27, 20, 162);
+    color: rgb(29, 29, 181)
+
 }
 
 .burger{
@@ -155,7 +158,8 @@ nav > ul >li:hover >a{
 }
 a{
     text-decoration: none;
-    color: rgb(27, 20, 162);
+    color: rgb(29, 29, 181);
+
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -174,8 +178,11 @@ h2{
     font-size: 2em;
 }
 
-h1,h2,h3{
+h1{
     font-weight: 400;
+}
+h2{
+    font-weight: 600;
 }
 h3{
     font-size: 1.3em;
@@ -201,10 +208,11 @@ main{
 .definition{
     max-width: 45%;
     padding: 10vh 50px 0 0;
-    text-align: left;
+    text-align: justify;
     text-justify: auto;
     font-size: 1.3em;
 }
+
 
 .imgPaysage{
     display: none;
@@ -218,6 +226,11 @@ main{
 .quartresRubrique{
     padding: 100px 2vw 0 2vw;
     transition: all 500ms ease-in-out;
+}
+
+.rubrique h3{
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .white{
@@ -241,11 +254,13 @@ p,li{
 }
 
 .rubrique{
+    padding-left: 2px;
     max-width: 680px;
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
     transition: all 500ms ease-in-out;
+    text-align: justify;
 }
 
 .rubrique:hover{
