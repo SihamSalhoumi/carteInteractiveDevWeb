@@ -166,6 +166,27 @@
             font-size: 1em;
             width: 80%;
         }
+
+        .listAvis{
+            flex-direction: column-reverse;
+            padding-top: 0;
+        }
+        .avisText{
+            width:90% ;
+            padding:0;
+            margin: auto;
+        }
+        .memeLigne{
+            flex-direction: column;
+            justify-content: center;
+            gap:0;
+            padding-bottom: 20px;
+        }
+        /* *SectionTrajet* */
+
+        .trajet{
+            padding-top: 60px;
+        }
     }
 
 /* ***mobile screen******* */

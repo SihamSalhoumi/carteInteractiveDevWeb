@@ -66,12 +66,13 @@ ul.tl li .item-title{
 }
 ul.tl li .item-detail{
     color:#282828;
-    padding-right: 10px;
+    padding-right: 40px;
+    text-align: justify;
 }
 ul.tl li .timestamp{
     color:#282828;
     position: absolute;
-    width:110px;
+    width:150px;
     left: -40%;
     top:-20%;
     text-align: right;
