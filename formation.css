@@ -173,6 +173,9 @@
     
     /* Disposition*/
     
+        .burger{
+            margin-right: 2%;
+}
         .imageGauche{
             padding-top: var(--hauteur-menu);
             height: 100vh;

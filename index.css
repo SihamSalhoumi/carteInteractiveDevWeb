@@ -192,6 +192,10 @@ header>div{
     h1{
         font-size: 1.8em;
     }
+
+    .burger{
+        margin-right: 2%;
+    }
 }
 
 /* ******mobile screen****** */
@@ -206,5 +210,9 @@ header>div{
 
 h1{
     font-size: 1.3em;
+}
+
+.burger{
+    margin-right: 2%;
 }
 }
