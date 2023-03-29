@@ -23,7 +23,7 @@
             </button>
         </div>
 <!-- ****************navBar portable******************* -->
-       <nav class="navPortable" role="navigation">
+        <nav class="navPortable" role="navigation">
             <ul class="menu-deroulant">
                 <li><a class="lienNavBar"href="metierBlack.html">Descriptif</a></li>
                 <li><a class="lienNavBar" href="motivation.html">Métier passion</a></li>
@@ -33,18 +33,12 @@
             </ul>
 
         </nav> 
-    </header>>
+    </header>
 <!-- **********************INTERACTIVE CARD*********************         -->
     <main role="main">
-        <img class="interactivePicture"src="images/bureau 1600x1200.jpg" usemap="#image-map">
+        <img class="interactivePicture"src="images/bureau 1400x1050.jpg" alt="Image d'un bureau interactif">
 
-        <map name="image-map">
-            <area alt="Choix de l'organisme de formation" title="Choix de l'organisme de formation" href="formation.html" coords="817,863,966,867,969,890,962,979,790,962" shape="poly">
-            <area alt="Description du métier du développeur web" title="Description du métier du développeur web" href="metierBlack.html" coords="229,103,952,82,929,586,897,581,862,568,838,564,818,565,793,568,764,579,264,537" shape="poly">
-            <area alt="Les perspective d'emploi" title="Les perspective d'emploi" href="emploi.html" coords="151,466,163,461,254,486,257,499,188,679,175,684,77,669,75,654" shape="poly">
-            <area alt="Mes compétences pour ce métier" title="Mes compétences pour ce métier" href="skills.html" coords="761,595,766,737,770,747,783,751,794,758,822,764,839,763,867,757,883,750,894,737,891,716,901,720,918,717,934,709,946,698,954,671,952,647,944,629,935,613,917,606,896,613,896,596,887,582,869,576,845,571,818,569,793,571,774,578" shape="poly">
-            <area alt="Une passion depuis l'enfance " title="Une passion depuis l'enfance " href="motivation.html" coords="963,393,1547,449,1472,912,958,726" shape="poly">
-        </map>
+
         <div class="menuPortable">
             <a href="metierBlack.html">
                 <img src="images/codes 900x600.jpg" alt="Ordinateur avec codes">
@@ -62,6 +56,29 @@
                 <img src="images/emploi 900x600.jpg" alt="Télépohone portable sur indeed">
             </a>
         </div>
+        <div class="history-tl-container">
+            <ul class="tl">
+                <a href="emploi.html">
+                    <li class="tl-item lienEmploi">
+                    </li>
+                </a>
+                <a href="metierBlack.html">
+                    <li class="tl-item lienDescriptif">
+                    </li>
+                </a>
+                <a href="skills.html">
+                    <li class="tl-item lienSkills">
+                    </li>
+                </a>
+                <a href="formation.html">
+                    <li class="tl-item lienFormation">
+                    </li>
+                </a>
+                <a href="motivation.html">
+                    <li class="tl-item lienPassion">
+                    </li>
+                </a>
+            </ul>
                 
     </main>
 
@@ -75,8 +92,7 @@
             header.classList.toggle('show-nav');
             }) 
         }
-        toggleMenu();    
-
+        toggleMenu();
     </script>
 </body>
 </html>
