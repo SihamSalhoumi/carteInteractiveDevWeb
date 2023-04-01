@@ -4,6 +4,9 @@
     --hauteur-menu:75px;
 }
 /* Général */
+html {
+	scroll-behavior: smooth;
+}
 
 body{
     background-color:#ebebeb;
@@ -23,7 +26,14 @@ img{
 
 a{
     color: #1d1db5;
+}
 
+#scrollUp
+{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.5;
 }
 /* Header et nav */
 header{
@@ -192,7 +202,7 @@ h2{
 }
 
 .imageGauche h2{
-    font-size: 1.8em;
+    display: none;
 }
 h3{
     font-size: 1.3em;

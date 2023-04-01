@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="formation.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/760e1026d0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <title>Mon choix de formation</title>
 </head>
 <body>
@@ -202,7 +203,11 @@
             <img class="imgPortrait"  class="clickable" src="images/argent900x1200.jpg">
             <img class="imgPaysage"  class="clickable" src="images/argent900x600.jpg">
         </section>      
+        <div id="scrollUp">
+            <a href="#top"><img src="images/top50x50.jpg"/></a>
+            </div>
     </main>
+
     <!-- **********JAVA SCRIPT********************************* -->
     <script>  
         function toggleMenu (){
@@ -213,6 +218,20 @@
             }) 
         }
         toggleMenu();
+    
+        
+        jQuery(function(){
+            $(function () {
+                $(window).scroll(function () { //Fonction appelée quand on descend la page
+                    if ($(this).scrollTop() > 200 ) {  // Quand on est à 200pixels du haut de page,
+                        $('#scrollUp').css('right','10px'); // Replace à 10pixels de la droite l'image
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+                    }
+                });
+            });
+        });
+
     </script>
 </body>
 </html>

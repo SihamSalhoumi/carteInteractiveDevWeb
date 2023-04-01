@@ -91,3 +91,13 @@
         object-position: top center;
     }
 }
+/* *************mobile*************** */
+@media screen and (max-width: 560px){
+    .imageGauche{
+        height: auto;
+        padding: 1px;
+    }
+    .imgPaysage{
+        height: 40vh;
+    }
+}
