@@ -145,11 +145,11 @@
     }
 
   .trajet{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   .comparatif{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -237,11 +237,6 @@
         }
 
 
-
-
-
-  
-
     }
 
 /* ***mobile screen******* */
@@ -251,20 +246,27 @@
 
     /* Disposition*/
 
+    .imageGauche{
+        height: auto;
+    }
+
+    .memeLigne i{
+        display: none;
+    }
 
     .choixFormation{
-        height: 100vh;
         text-align: justify;
+        height: auto;
     }
     .centre{
     text-align: center;
     }
 
     .groupCriteres{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 0;
-        gap:10px;
+        gap:5px;
     }
     .criteres{
         flex-direction: column;

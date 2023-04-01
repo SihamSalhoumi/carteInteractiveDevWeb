@@ -15,6 +15,12 @@ body{
     box-sizing: borFer-box;
 }
 
+img{
+    box-shadow: 2px -2px 6px 0px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 2px -2px 6px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 2px -2px 6px 0px rgba(0,0,0,0.41);
+}
+
 a{
     color: #1d1db5;
 
@@ -329,7 +335,6 @@ img:hover{
     
     .imgPortrait{
         width: 45%;
-        height: 40%;
         object-fit: cover;
         object-position: bottom left;
         position: left;
@@ -559,14 +564,23 @@ img:hover{
 @media screen and (max-width:560px) {
 
 /* Disposition*/
- 
+
+  
+    .imgPaysage{
+        height: 40vh;
+    }
+
     .imageGauche{
         padding: 1px;
+        height: auto;
     }
     .definition{
         padding: 10px;
         text-align: justify;
     }
+    
+    
+
 
 /* Font*/
     h1{

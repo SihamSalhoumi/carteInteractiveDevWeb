@@ -152,6 +152,7 @@ h1{
     height: 800px;
     margin: auto;
     box-shadow:6px 6px 10px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow:6px 6px 10px 0 rgba(0,0,0,0.4);
 }
 
 
@@ -224,7 +225,7 @@ h1{
     left: -18px;
     top: -5px; 
     content: "";
-    border: 10px solid rgba(255, 255, 255, 0.8);
+    border: 10px solid hsla(0, 0%, 100%, 0.8);
     border-radius: 500%;
     background: #1d1db5;
     height: 40px;
