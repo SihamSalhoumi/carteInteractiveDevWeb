@@ -12,7 +12,7 @@ body{
     background-attachment: fixed;
     color:black;
     letter-spacing: 0.02em;
-    box-sizing: borFer-box;
+    box-sizing: border-box;
 }
 
 img{
@@ -242,7 +242,7 @@ main{
 
 .white{
     background-color:#f9f9f9;
-    box-shadow: 0 0 10px 10px ,#f9f9f9;
+    box-shadow: 0 0 10px 10px #f9f9f9;
 }
 
 div{
@@ -337,7 +337,6 @@ img:hover{
         width: 45%;
         object-fit: cover;
         object-position: bottom left;
-        position: left;
     }
     .definition{
         font-size: 1em;
