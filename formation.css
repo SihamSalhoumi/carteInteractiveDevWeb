@@ -262,6 +262,7 @@
     text-align: center;
     }
 
+
     .groupCriteres{
         flex-direction: row;
         align-items: center;
@@ -272,6 +273,11 @@
         flex-direction: column;
         gap:0;
         padding: 0;
+    }
+
+    
+    .ListeRubriques{
+        height: auto;
     }
 
   

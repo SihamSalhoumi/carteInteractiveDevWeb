@@ -100,4 +100,9 @@
     .imgPaysage{
         height: 40vh;
     }
+
+    
+    .ListeRubriques{
+        height: auto;
+    }
 }

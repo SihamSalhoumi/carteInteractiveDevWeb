@@ -58,3 +58,16 @@
         }
     }
 }
+
+@media screen and (max-width:560px) {
+
+    /* Disposition*/
+
+    .imageGauche{
+        height: auto;
+    }
+
+    .ListeRubriques{
+        height: auto;
+    }
+}

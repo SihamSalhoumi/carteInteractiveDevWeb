@@ -361,8 +361,6 @@ img:hover{
     }
     .definition{
         font-size: 1em;
-        max-height: 675px;
-        overflow: auto;
     }
 /* Section QuatresRubriques */
 
@@ -598,8 +596,6 @@ img:hover{
         text-align: justify;
     }
     
-    
-
 
 /* Font*/
     h1{
@@ -618,6 +614,7 @@ img:hover{
     }
     
     /* Section QuatresRubriques */
+    
     .quartresRubrique{
         padding: 0;
     }
@@ -631,4 +628,9 @@ img:hover{
    .rubrique img{
     width: 100%;
    }
+
+   .ListeRubriques{
+    height: auto;
+}
+
 }
