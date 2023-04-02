@@ -305,6 +305,10 @@ img:hover{
     transition: all 500ms ease-in-out;
 }
 
+.imgPortrait{
+    width: 45%;
+}
+
 .rubrique div{
     height: 300px;
     padding: 5px 10px;
