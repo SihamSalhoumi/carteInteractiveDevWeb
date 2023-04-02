@@ -142,6 +142,8 @@ h1{
     font-weight: 400;
 }
 
+
+
 .interactivePicture{
     position: fixed;
     top:var(--hauteur-menu);
