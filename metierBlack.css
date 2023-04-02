@@ -324,7 +324,7 @@ img:hover{
     position: relative;
     transform: translateY(-20px);
     opacity: 0;
-    transition: 2s all cubic-bezier(.5,0,0,1);
+    transition: 1s all cubic-bezier(.5,0,0,1);
 }
 
 .reveal.active{
@@ -625,11 +625,11 @@ img:hover{
     }
 
 
-   .rubrique img{
+    .rubrique img{
     width: 100%;
-   }
+    }
 
-   .ListeRubriques{
+    .ListeRubriques{
     height: 100%;
 }
 .rubrique div{
