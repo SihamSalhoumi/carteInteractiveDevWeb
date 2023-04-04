@@ -230,6 +230,7 @@ main{
     justify-content:space-between;
     align-items:center;
     padding-left: 10vw;
+    height: 1000px;
 }
 
 .definition{
@@ -307,6 +308,7 @@ img:hover{
 
 .imgPortrait{
     width: 45%;
+    height: 100%;
 }
 
 .rubrique div{
@@ -363,6 +365,11 @@ img:hover{
         object-fit: cover;
         object-position: bottom left;
     }
+
+    .imageGauche{
+        height: 800px;
+    }
+
     .definition{
         font-size: 1em;
     }
